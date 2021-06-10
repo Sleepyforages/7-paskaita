@@ -5,38 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
     <title>7-paskaita</title>
 </head>
 <style>
     .container {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        width: 100%;
+    }
+    
+    .left,
+    .right {
+        width: 50%;
+        float: left;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .right blockquote {
+        border-left: 2px solid grey;
+        padding-left: 10px;
+    }
+    
+    .right-container {
+        width: 100%;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .right h1,
+    .right p,
+    .right pre {
+        font-family: 'Stint Ultra Condensed', cursive;
+        font-weight: bold;
+        font-style: italic;
+        color: red;
+        font-size: 22px;
+    }
+    
+    .right pre {
+        border-radius: 15px;
+        border: 2px solid yellowgreen;
+        padding-top: 5%;
+    }
+    
+    .right h2 {
+        font-size: 28px;
+        font-weight: 100;
+    }
+    
+    .right h3 {
+        font-size: 50px;
+        margin: 0px;
+        font-weight: 150;
     }
 </style>
 
 <body>
     <div class="container">
-        <h1>Headeris</h1>
-        <h2>Headeris</h2>
-        <h3>Headeris</h3>
-        <h4>Headeris</h4>
-        <h5>Headeris</h5>
-        <h6>Headeris</h6>
-        <p>Bla bla bla tekstas</p>
-        <blockquote>Visi mes žmonės, bet ar tikrai?</blockquote>
-        <pre>
-           .css {
-               font-size:22px;
-           }
+        <div class="left">
+            <h1>Headeris</h1>
+            <h2>Headeris</h2>
+            <h3>Headeris</h3>
+            <h4>Headeris</h4>
+            <h5>Headeris</h5>
+            <h6>Headeris</h6>
+            <p>Bla bla bla tekstas</p>
+            <blockquote>Visi mes žmonės, bet ar tikrai?</blockquote>
+            <pre>
+                .css {                          ąęąęf
+                    font-size:22px;
+                }
 
-           Very preconfigured 
-                    text which can be 
-                            set as our new predefined text
+                <h3>&copy;The only eternal master of the universe. </h3>
+            </pre>
+        </div>
+        <div class="right">
+            <div class="right-container">
+                <h1>Headeris</h1>
+                <h2>Headeris</h2>
+                <h3>Headeris</h3>
+                <h4>Headeris</h4>
+                <h5>Headeris</h5>
+                <h6>Headeris</h6>
+                <p>Bla bla bla tekstas</p>
+                <blockquote>Visi mes žmonės, bet ar tikrai?</blockquote>
+                <pre>
+                    .css {
+                        font-size:22px;
+                    }
 
-        </pre>
+                    <h3>&copy;The only eternal master of the universe. </h3>
+                </pre>
+            </div>
+        </div>
     </div>
 </body>
 
